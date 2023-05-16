@@ -15,7 +15,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://satelital485.com.ar/">
     <meta property="og:title" content="Equipo Satelital 485">
-    <meta property="og:description" content="Somos el equipo satelital 485, y llevaremos a cabo la mision Registro llevando un pico-satélite suborbital a 1km de altura.">
+    <meta property="og:description"
+        content="Somos el equipo satelital 485, y llevaremos a cabo la mision Registro llevando un pico-satélite suborbital a 1km de altura.">
     <meta property="og:image" content="https://satelital485.com.ar/assets/img/logo.png">
 
     <!-- Twitter -->
@@ -45,7 +46,7 @@
             <li class="p-4 text-center text-xl"><a href="#cansat">Cansat</a></li>
             <li class="p-4 text-center text-xl"><a href="#aboutus">Sobre Nosotros</a></li>
         </ul>
-    </nav> 
+    </nav>
     <article class="bg-violet-700">
         <div class="flex justify-around items-center">
             <div class="flex justify-around items-center flex-col w-4/12">
@@ -59,12 +60,22 @@
             <div class="flex justify-around items-center w-3/12">
                 <div class="smartphone">
                     <div class="content">
-                        <video class="w-full h-full" id="presentation" autoplay muted src="assets/vid/presentacion.mp4">
+                        <video class="w-full h-full" controls id="presentation" src="assets/vid/presentacion.mp4">
                         </video>
+                        <div id="video-loading">
+                            <div class='square centered'></div>
+                            <svg class='diamond large' viewBox="0 0 58 58">
+                                <path class='path' d="M1.42293 29L29 1.42293L56.5771 29L29 56.5771L1.42293 29Z" />
+                            </svg>
+                            <svg class='diamond large rotated' viewBox="0 0 58 58">
+                                <path class='path' d="M1.42293 29L29 1.42293L56.5771 29L29 56.5771L1.42293 29Z" />
+                            </svg>
+                            <div class='circle centered'></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </article>
     <article class="w-full -mt-8">
         <img src="assets/img/wave.svg" alt="wave" />
