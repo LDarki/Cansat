@@ -29,9 +29,12 @@
 
     <!-- Links -->
     <link rel="icon" type="image/x-icon" href="https://satelital485.com.ar/assets/img/logo.ico">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/tailwind.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
@@ -41,15 +44,25 @@
         <ul class="flex w-full no-underline float-left">
             <li><a href="#!"><img src="assets/img/logo.png" class="w-16" alt="Equipo Satelital 485 Logo"></a></li>
         </ul>
-        <ul class="flex w-full no-underline mr-24 float-right justify-end">
+        <ul class="hidden md:flex w-full no-underline mr-24 float-right justify-end">
             <li class="p-4 text-center text-xl"><a href="#!">Inicio</a></li>
             <li class="p-4 text-center text-xl"><a href="#cansat">Cansat</a></li>
             <li class="p-4 text-center text-xl"><a href="#aboutus">Sobre Nosotros</a></li>
         </ul>
+        <div class="block md:hidden p-4 mt-2 mr-2">
+            <i id="burger-toggle" class="fa fa-bars fa-xl"></i>
+        </div>
     </nav>
+    <div class="hidden" id="phone-menu">
+        <ul class="flex justify-around items-center shadow-md flex-col bg-violet-700">
+            <li><a href="#!" class="block text-xl px-2 py-4">Inicio</a></li>
+            <li><a href="#cansat" class="block text-xl px-2 py-4">Cansat</a></li>
+            <li><a href="#aboutus" class="block text-xl px-2 py-4">Sobre Nosotros</a></li>
+        </ul>
+    </div>
     <article class="bg-violet-700">
-        <div class="flex justify-around items-center">
-            <div class="flex justify-around items-center flex-col w-4/12">
+        <div class="flex justify-around items-center flex-col md:flex-row">
+            <div class="flex justify-around items-center flex-col w-8/12 md:w-4/12">
                 <span class="text-4xl">
                     Hola!
                 </span>
@@ -57,7 +70,7 @@
                     Somos el Equipo Satelital 485.
                 </span>
             </div>
-            <div class="flex justify-around items-center w-3/12">
+            <div class="flex justify-around mt-2 md:mt-0 items-center w-3/12">
                 <div class="smartphone">
                     <div class="content">
                         <video class="w-full h-full" controls id="presentation" src="assets/vid/presentacion.mp4">
@@ -80,7 +93,15 @@
     <article class="w-full -mt-8">
         <img src="assets/img/wave.svg" alt="wave" />
     </article>
-    <article class="w-full flex -mt-72 justify-around flex-col items-center">
+    <article class="w-full flex md:-mt-96 justify-around flex-col items-center">
+        <span class="text-3xl text-black p-8">
+            Patrocinadores
+        </span>
+        <div class="flex justify-around items-center bg-white shadow-xl p-4 w-4/12">
+           <a href="https://eet485.com.ar/" target="_blank"><img src="assets/img/eet485.jpeg" class="w-16" alt="EET485 Logo"></a>
+        </div>
+    </article>
+    <article class="w-full flex justify-around flex-col items-center">
         <span class="text-2xl font-bold text-black p-8">
             En desarrollo.....
         </span>
